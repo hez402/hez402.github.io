@@ -1,0 +1,76 @@
+site_name: HEZ402
+# nav:
+site_url: https://hez402.github.io
+site_author: 扔橘子
+site_description: >-
+  HEZ402小文章存放处。
+
+theme:
+  name: material
+  language: zh
+  logo: logo/logo.png
+  palette:
+    - scheme: default
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: 暗色模式
+    - scheme: slate
+      primary: deep purple
+      accent: deep purple
+      toggle:
+        icon: material/toggle-switch
+        name: 亮色模式
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - search.suggest
+    - search.highlight
+    - search.share
+  font:
+    text: Roboto
+    code: Roboto Mono
+  custom_dir: overrides
+markdown_extensions:
+  - toc:
+      permalink: true
+  - abbr
+  - pymdownx.snippets
+  - attr_list
+  - def_list
+  - pymdownx.arithmatex:
+      generic: true
+  - meta
+  - pymdownx.highlight:
+      linenums_style: pymdownx-inline
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - footnotes
+  - pymdownx.critic
+  - admonition
+  - md_in_html
+  - codehilite:
+      guess_lang: false
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.betterem:
+      smart_enable: 'underscore'
+  - pymdownx.superfences:
+      custom_fences:
+      - name: mermaid
+        class: mermaid
+        format: !!python/name:pymdownx.superfences.fence_code_format ''
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+extra_css:
+  - css/extra.css
+
+extra_javascript:
+  - https://cdn.bootcdn.net/ajax/libs/mathjax/2.7.9/MathJax.js
+  - javascripts/config.js
+copyright: Copyright &copy; 2024 HEZ402
